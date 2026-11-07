@@ -46,16 +46,13 @@ Gestión de Biblioteca/
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Lenguaje / IDE:** Java, BlueJ
-* **Gestión de Proyectos:** Trello
+* **Lenguaje / IDE:** ☕ Java, 🔵 BlueJ
+* **Gestión de Proyectos:** Trello ``` https://trello.com/invite/b/6aec7b40c0128ca41b58b42c/ATTI545c32a70edc9e69996d4bc00f3d44ebFE2C2063/integrador-poo ```
 * **Documentación y Control de Versiones:** Markdown, Git & GitHub
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/NiKoBl99/Trabajo-integrador-POO-tp7.git
-   ```
+1. **Clonar el repositorio:** ``` bash git clone https://github.com/NiKoBl99/Trabajo-integrador-POO-tp7.git ```
 2. Abrir el entorno BlueJ.**
 3. Cargar el proyecto:** Selecciona `Project` -> `Open Project...` y elige la carpeta clonada.
 4. Compilar** todas las clases.
