@@ -44,13 +44,20 @@ Gestión de Biblioteca/
 └── README.md
 
 ## 🛠️ Tecnologías Utilizadas
-**Lenguaje / IDE: Java, BlueJ
-**Gestión de Proyectos: Trello
-**Documentación y Control de Versiones: Markdown, Git & GitHub
 
-##🚀 Cómo Ejecutar el Proyecto
-**Clonar el repositorio: git clone https://github.com/NiKoBl99/Trabajo-integrador-POO-tp7.git
-**Abrir el entorno BlueJ.
-**Seleccionar Project -> Open Project... y elegir la carpeta clonada.
-**Compilar todas las clases.
-**Ejecutar el método main (o instanciar) la clase principal GestionBiblioteca para visualizar los listados y reportes solicitados.
+* **Lenguaje / IDE:** Java, BlueJ
+* **Gestión de Proyectos:** Trello
+* **Documentación y Control de Versiones:** Markdown, Git & GitHub
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/NiKoBl99/Trabajo-integrador-POO-tp7.git
+   ```
+2. **Abrir el entorno BlueJ.**
+3. **Cargar el proyecto:** Selecciona `Project` -> `Open Project...` y elige la carpeta clonada.
+4. **Compilar** todas las clases.
+5. **Ejecutar** el método `main` (o instanciar) la clase principal `GestionBiblioteca` para visualizar los listados y reportes solicitados.
