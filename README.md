@@ -8,11 +8,12 @@
 ---
 
 ## 👥 Equipo
-- Alegre, Geronimo
-- Blanco, Nicolas Gustavo
-- Cabrera, Jorge Sebastian
-- Cardozo Candia, Santiago
 - Fava, Gabriel
+- Blanco, Nicolas Gustavo
+- Cardozo Candia, Santiago
+- Boilini, Festorazzi Uriel Irto
+- Cabrera, Jorge Sebastian
+- Alegre, Geronimo David
 
 ## 📋 Caso de Estudio
 **Sistema de Gestión de Biblioteca:** Aplicación desarrollada en Java para la administración de préstamos de libros. Permite gestionar el catálogo de títulos y controlar los préstamos según el tipo de socio (Estudiantes y Docentes). Incluye validaciones de cupos, control de fechas de vencimiento, un sistema de recompensas con días de préstamo extra para docentes responsables, y generación de reportes estadísticos mediante colecciones genéricas.
