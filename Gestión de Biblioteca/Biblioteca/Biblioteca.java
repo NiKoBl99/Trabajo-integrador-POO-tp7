@@ -60,5 +60,53 @@ public class Biblioteca
     public boolean haySocio(Socio p_socio){
         return this.getSocios().contains(p_socio);
     }
+
+    // prestarLibro()
+
+    public void devolverLibro(Libro p_libro) throws LibroNoPrestadoException{
+        if(p_libro.prestado() == false){
+            throw new LibroNoPrestadoException("El libro " + p_libro.getTitulo() + "    no esta prestado");
+        } else {
+            Prestamo ultimoPrestamo = p_libro.ultimoPrestamo();
+            ultimoPrestamo.registrarFechaDevolucion(Calendar.getInstance());
+        }
+    }
+
+    // cantidadDeSociosPorTipo()
+
+    // prestamosVencidos()
+
+    // docentesResponsables()
+    
+    public String quienTieneElLibro(Libro p_libro) throws LibroNoPrestadoException{
+        if(p_libro.prestado()){
+            return p_libro.ultimoPrestamo().getSocio().toString();
+        }else{
+            throw new LibroNoPrestadoException("El libro se encuentra en la biblioteca");
+        }
+    }
+
+    public Socio buscarSocio(int p_dni){
+        for(Socio socio: this.getSocios()){
+            if(socio.getDniSocio() == p_dni){
+                return socio;
+            }     
+        }
+        return null;
+    }
+    
+    // listaDeSocios()
+    
+    // listaDeLibros()
+    
+    public String listaDeTitulos() {
+        String listado = "";
+        for(Libro libro: this.getLibros()) {
+            listado += libro.toString() + "\n";
+        }
+        return listado;
+    }
+    
+    // listaDeDocentesResponsables()
   
 }
