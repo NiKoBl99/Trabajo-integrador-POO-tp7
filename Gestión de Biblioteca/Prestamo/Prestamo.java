@@ -58,6 +58,10 @@ public class Prestamo{
         return fecha.after(fechaLimite);
     }
 
+    public void registrarFechaDevolucion(Calendar p_fecha) {
+        this.fechaDevolucion = p_fecha;
+    }
+
     public String toString() {
         return "Retiro: " + this.getFechaRetiro() + " - Devolución: " + this.getFechaDevolucion() + 
             "\nLibro: " + this.getLibro() + "\nSocio: " + this.getSocio();
