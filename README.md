@@ -42,3 +42,15 @@ Gestión de Biblioteca/
 │   ├── Prestamo.jar
 │   └── Prestamo.md
 └── README.md
+
+## 🛠️ Tecnologías Utilizadas
+**Lenguaje / IDE: Java, BlueJ
+**Gestión de Proyectos: Trello
+**Documentación y Control de Versiones: Markdown, Git & GitHub
+
+##🚀 Cómo Ejecutar el Proyecto
+**Clonar el repositorio: git clone https://github.com/NiKoBl99/Trabajo-integrador-POO-tp7.git
+**Abrir el entorno BlueJ.
+**Seleccionar Project -> Open Project... y elegir la carpeta clonada.
+**Compilar todas las clases.
+**Ejecutar el método main (o instanciar) la clase principal GestionBiblioteca para visualizar los listados y reportes solicitados.
