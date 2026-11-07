@@ -1,14 +1,27 @@
-# Trabajo-integrador-POO-tp7
 # Gestión de Biblioteca
+# Trabajo Práctico Integrador - Programación Orientada a Objetos
 
-Sistema integral desarrollado en Java para administrar los préstamos de libros de una biblioteca. Este proyecto corresponde a un Trabajo Práctico Integrador de Programación Orientada a Objetos, diseñado para aplicar conceptos de herencia, clases abstractas, colecciones y manejo de excepciones.
+**Universidad Nacional del Nordeste (UNNE)**
+**Facultad de Ciencias Exactas y Naturales y Agrimensura (FaCENA)**
+**Carrera:** Licenciatura en Sistemas de Información
 
-## Estructura del Proyecto
+---
 
-La organización del código y la documentación se divide según las clases principales del dominio del problema[cite: 1]:
+## 👥 Equipo
+- Alegre, Geronimo
+- Blanco, Nicolas Gustavo
+- Cabrera, Jorge Sebastian
+- Cardozo Candia, Santiago
+- Fava, Gabriel
+
+## 📋 Caso de Estudio
+**Sistema de Gestión de Biblioteca:** Aplicación desarrollada en Java para la administración de préstamos de libros. Permite gestionar el catálogo de títulos y controlar los préstamos según el tipo de socio (Estudiantes y Docentes). Incluye validaciones de cupos, control de fechas de vencimiento, un sistema de recompensas con días de préstamo extra para docentes responsables, y generación de reportes estadísticos mediante colecciones genéricas.
+
+## 📂 Estructura del Repositorio
+El código fuente y su respectiva documentación están organizados en paquetes según el diagrama de clases:
 
 ```text
-Gestión de Biblioteca
+Gestión de Biblioteca/
 ├── <<abs>>Socio/
 │   ├── Docente/
 │   │   ├── Docente.jar
