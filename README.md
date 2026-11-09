@@ -23,6 +23,9 @@ El código fuente y su respectiva documentación están organizados en paquetes 
 
 ```text
 Gestión de Biblioteca/
+├── <<Ejecutable>>GestionBiblioteca /
+│   ├── ejecutable.java
+│   └── ejecutable.md
 ├── <<abs>>Socio/
 │   ├── Docente/
 │   │   ├── Docente.java
@@ -35,9 +38,6 @@ Gestión de Biblioteca/
 ├── Biblioteca/
 │   ├── Biblioteca.java
 │   └── Biblioteca.md
-├── Ejecutable/
-│   ├── ejecutable.java
-│   └── ejecutable.md
 ├── Libro no prestado/
 │   ├── LibroNoPrestado.java
 │   └── LibroNoPrestado.md
