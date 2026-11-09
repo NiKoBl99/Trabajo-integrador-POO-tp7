@@ -24,7 +24,7 @@ public abstract class Socio {
         this.nombre = p_nombre;
     }
     
-    private void setDiasPrestamo(int p_diasPrestamo){
+    protected void setDiasPrestamo(int p_diasPrestamo){
         this.diasPrestamo = p_diasPrestamo;
     }
     
@@ -48,16 +48,44 @@ public abstract class Socio {
         return this.diasPrestamo;
     }
     
+    /**
+     * METODO ADD PRESTAMO
+     * @param p_prestamo
+     * @return TRUE SI fue agregado el prestamo
+     */
+    public boolean agregarPrestamo(Prestamo p_prestamo){
+        return this.getListaPrestamos().add(p_prestamo);
+    }
+    
+    /**
+     * METODO REMOVE PRESTAMO
+     * @param p_prestamo
+     * @return TRUE SI fue eliminado el prestamo
+     */
+    public boolean quitarPrestamo(Prestamo p_prestamo){
+        return this.getListaPrestamos().remove(p_prestamo);
+    }
+    
     public int cantLibrosPrestados(){
         return this.getListaPrestamos().size();
     }
-    
-    public abstract String soyDeLaClase();
     
     public String toString (){
         return "D.N.I: " + this.getDniSocio() + " ||" + this.getNombre() + " (" + soyDeLaClase() + ") || Libros prestados: " + cantLibrosPrestados();
     }
     
+     /**
+     * Verifica si el socio puede solicitar más préstamos, basado en si tiene préstamos vencidos. 
+     * @return verdadero si el socio puede pedir un nuevo préstamo, falso si tiene algún préstamo vencido
+     */
+    public boolean puedePedir() {
+        for(Prestamo prestamo: this.getListaPrestamos()) {
+            if(prestamo.vencido(prestamo.getFechaDevolucion()) == true) {
+                return false;
+            }
+        }
+        return true;
+    }
     
-    
+    public abstract String soyDeLaClase();
 }
