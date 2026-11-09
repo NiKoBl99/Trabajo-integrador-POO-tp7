@@ -25,21 +25,27 @@ El código fuente y su respectiva documentación están organizados en paquetes 
 Gestión de Biblioteca/
 ├── <<abs>>Socio/
 │   ├── Docente/
-│   │   ├── Docente.jar
+│   │   ├── Docente.java
 │   │   └── Docente.md
 │   ├── Estudiante/
-│   │   ├── Estudiante.jar
+│   │   ├── Estudiante.java
 │   │   └── Estudiante.md
-│   ├── Socio.jar
+│   ├── Socio.java
 │   └── Socio.md
 ├── Biblioteca/
-│   ├── Biblioteca.jar
+│   ├── Biblioteca.java
 │   └── Biblioteca.md
+├── Ejecutable/
+│   ├── ejecutable.java
+│   └── ejecutable.md
+├── Libro no prestado/
+│   ├── LibroNoPrestado.java
+│   └── LibroNoPrestado.md
 ├── Libro/
-│   ├── Libro.jar
+│   ├── Libro.java
 │   └── Libro.md
 ├── Prestamo/
-│   ├── Prestamo.jar
+│   ├── Prestamo.java
 │   └── Prestamo.md
 └── README.md
    ```
