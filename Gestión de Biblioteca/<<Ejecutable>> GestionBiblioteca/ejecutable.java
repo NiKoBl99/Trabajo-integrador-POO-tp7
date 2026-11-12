@@ -9,15 +9,26 @@ public class GestionBiblioteca{
         Libro libroNuevo = new Libro("Programando con Java", 1, "Oracle", 2003);
         biblioteca.agregarLibro(libroNuevo);
 
-        System.out.println(biblioteca.cantidadDeSociosPorTipo("Estudiante"));
-        System.out.println(biblioteca.listaDeDocentesResponsables());
-        System.out.println(biblioteca.listaDeLibros());
-        System.out.println(biblioteca.listaDeSocios());
-
-
+        System.out.println("ESTADÍSTICAS GENERALES");
+        System.out.println("Cantidad actual de socios (Estudiantes): " + biblioteca.cantidadDeSociosPorTipo("Estudiante"));
+        System.out.println("--------------------------------------------------");
         
+        System.out.println("REPORTE DE DOCENTES RESPONSABLES");
+        System.out.println(biblioteca.listaDeDocentesResponsables());
+        System.out.println("--------------------------------------------------");
+        
+        System.out.println("CATÁLOGO DE LIBROS");
+        System.out.println(biblioteca.listaDeLibros());
+        System.out.println("--------------------------------------------------"); 
+        
+        System.out.println("NÓMINA DE SOCIOS");
+        System.out.println(biblioteca.listaDeSocios());
+        System.out.println("--------------------------------------------------");
+  
+        System.out.println("ESTADO DEL LIBRO NUEVO ('" + libroNuevo.getTitulo() + "')");
         try{
-            System.out.println(biblioteca.quienTieneElLibro(libroNuevo));
+            String poseedor = biblioteca.quienTieneElLibro(libroNuevo);
+            System.out.println("El libro está actualmente en poder de: " +poseedor);
         }
         catch(LibroNoPrestadoException e){
             System.out.println(e);
