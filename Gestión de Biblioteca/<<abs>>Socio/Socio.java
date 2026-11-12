@@ -66,8 +66,14 @@ public abstract class Socio {
         return this.getListaPrestamos().remove(p_prestamo);
     }
     
-    public int cantLibrosPrestados(){
-        return this.getListaPrestamos().size();
+    public int cantLibrosPrestados() {
+        int prestamoActivos = 0;
+        for(Prestamo prestamo: this.getListaPrestamos()){
+            if(prestamo.getFechaDevolucion() == null){
+                prestamoActivos++;
+            }
+        }
+        return prestamoActivos;
     }
     
     public String toString (){
@@ -79,9 +85,12 @@ public abstract class Socio {
      * @return verdadero si el socio puede pedir un nuevo préstamo, falso si tiene algún préstamo vencido
      */
     public boolean puedePedir() {
+        Calendar hoy = Calendar.getInstance();
         for(Prestamo prestamo: this.getListaPrestamos()) {
-            if(prestamo.vencido(prestamo.getFechaDevolucion()) == true) {
-                return false;
+            if(prestamo.getFechaDevolucion() == null) { 
+                if(prestamo.vencido(hoy)) {
+                    return false;
+                }
             }
         }
         return true;
